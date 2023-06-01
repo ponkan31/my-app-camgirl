@@ -1,0 +1,129 @@
+body {
+  height: 100vh;
+  position: relative;
+  background-color: #E5E1D1;
+  overflow: hidden;
+}
+
+/* 木の飾り */
+.decorationContainer, .decorationContainer-2 {
+  display: flex;
+  justify-content: center;
+}
+.decorationContainer img {
+  width: 450px;
+  height: 70px;
+  position: absolute;
+  top: 20px;
+}
+
+/* 木の飾り２ */
+.decorationContainer-2 img {
+  width: 450px;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* ログイン画面を中央に */
+.formContainer {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+
+h1 {
+  text-align: center;
+  color: #004226;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.formContainer form {
+  width: 70%;
+  max-width: 450px;
+  padding: 30px;
+}
+
+/* 横線hr */
+.formContainer form hr {
+  border: none;
+  border-bottom: 1px solid #333;
+  margin: 0;
+  height: 3px;
+  width: 90%;
+  max-width: 400px;
+}
+
+
+/*フォームの中身を中央寄せ */
+.uiForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 400px;
+}
+
+.uiForm p {
+  font-size: 13px;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* 入力画面のデザイン */
+.formField input {
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.formField input:focus {
+  outline: none;
+}
+
+.formField label {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+/*buttonの共通要素  */
+button {
+  padding: 8px 25px;
+  color: #fff;
+  background: #2C6D48;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 3px 3px 8px 0px #bfbfbf;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: #7DA06A;
+}
+
+/* 2つのボタンは横並びに */
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  /* buttonの間隔 */
+  gap: 20px;
+}
+
+.errorMsg {
+  color: red;
+  margin: 0;
+  align-self: flex-start;
+}
